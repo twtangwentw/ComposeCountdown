@@ -14,8 +14,8 @@ import androidx.compose.material.LocalTextStyle
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
-import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
@@ -26,11 +26,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.lerp
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.font.FontFamily
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.TextUnit
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import kotlinx.coroutines.launch
 import kotlin.math.absoluteValue
 
@@ -40,7 +36,7 @@ fun TimeSelector(
     current: Int,
     change: Int.() -> Unit,
     color1: Color = Color(0xFFE91E63),
-    color2: Color = Color(0xFFFCE4EC),
+    color2: Color = Color(0x99FCE4EC),
     style: TextStyle
 ) {
     val widthDp = with(LocalDensity.current) { style.fontSize.toDp() * 2 }
